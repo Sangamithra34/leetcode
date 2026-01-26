@@ -1,0 +1,16 @@
+// Last updated: 1/26/2026, 4:32:26 PM
+class Solution {
+    public int averageValue(int[] nums) {
+        int sum=0;int count=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]%6==0){
+                sum=sum+nums[i];
+                count++;
+            }
+        }
+        if (sum==0){
+            return 0;
+        }
+        return sum/count;
+    }
+}
