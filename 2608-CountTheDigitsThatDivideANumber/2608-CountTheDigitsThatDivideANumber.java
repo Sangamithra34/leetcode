@@ -1,0 +1,13 @@
+// Last updated: 1/26/2026, 4:32:20 PM
+class Solution {
+    public int countDigits(int num) {
+        int n = num, ans = 0;
+        while (n > 0) {
+            if (num % (n % 10) == 0) {
+                ans++;
+            }
+            n /= 10;
+        }
+        return ans;
+    }
+}
